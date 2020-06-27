@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style type="text/css">
+        body
+        {
+            box-shadow: 2px 2px 2px 2px #000;
+            width: 40%;
+            height: 40%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 150px;
+            padding-top: 10px;
+            border: 1px solid black;
+        }
+        hr
+        {
+            border : 1px solid black;
+        }
+        label
+        {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+    <body>
+            <h1>Upload an Image</h1>
+            <hr>
+                <form action="{{url_for('get_input_image')}}" , method="POST" enctype="multipart/form-data">
+                    <div class="form-group"><br>
+                        <div class="custom-file">
+                            <label class="custom-file-label" for="image">Select image...</label>
+                            <input type="file" class="custom-file-input" name="image" id="image" accept=".jpg,.jpeg,.png">  
+                        </div>
+                    </div><br><br>
+                    &emsp;<button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+    </body>
+</html>
