@@ -3,37 +3,30 @@
     <style type="">
         body
         {
-            box-shadow: 2px 2px 2px 2px #000;
-            width: 40%;
-            height: 40%;
+            width: 70%;
+            height: 70%;
             text-align: center;
-            margin: 0 auto;
             margin-top: 150px;
             padding-top: 10px;
-            border: 1px solid black;
-        }
-        hr
-        {
-            border : 1px solid black;
         }
         label
         {
-            margin-left: 80px;
+            margin-left: 100px;
         }
     </style>
 </head>
     <body>
         <center>
-            <h1>Upload an Video</h1>
+            <h1>Upload video</h1>
             <hr>
                 <form action="{{url_for('get_input_video')}}" , method="POST" enctype="multipart/form-data">
                     <div class="form-group"><br>
                         <div class="custom-file">
-                            <label class="custom-file-label" for="video">Select Video...</label>
-                            <input type="file" class="custom-file-input" name="video" id="video" accept=".avi,.mov,.mp4">  
+                            <label class="custom-file-label" for="video">select video</label>
+                            <input type="file" class="custom-file-input" id="video" >  
                         </div>
                     </div><br><br>
-                    &emsp;<button type="submit" class="btn btn-primary">Upload</button>
+                    &emsp;<button type="submit" class="btn btn-primary">upload</button>
                 </form>
         </center>
     </body>
